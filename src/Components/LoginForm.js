@@ -10,8 +10,6 @@ const LoginFrom = () =>{
  const [error,setError] = useState("");
  const [loading,setLoading] = useState(false);
 
- console.log({loading}.loading)
-
 const renderButton = () =>{
     if({loading}.loading == true){
         return <Spinner size="small"/>
@@ -25,6 +23,7 @@ setEmail("");
 setPass("");
 setLoading(false);
 setError("");
+console.log("login Success")
 }
 
 const onLoginFailed = () => {
